@@ -62,33 +62,3 @@ class TestClass:
 
             #Then
             assert resultado
-
-    # def test_retorno_da_funcao_str(self):
-    #     with pytest.raises(Exception):
-    #         #Given
-    #         nome, data_nascimento, salario = 'Teste', '19/05/2003', 1000
-    #         esperado = 'Funcionario(Teste, 19/05/2003, 1000'
-    #         #When
-    #         funcionario_teste = Funcionario(nome, data_nascimento, salario)
-    #         resultado = funcionario_teste.__str__()
-
-    #         #Then
-    #         assert resultado == esperado
-
-
-
-    #Para fazer com que a biblioteca pyest-cov funcione, escrevemos no terminal:pytest --cov=(Nome da pasta / arquivo) tests/
-    # Assim, devolvendo o resultado somento no arquivo específicado
-    
-    # Usando o comnado: pytest --cov=codigo tests/ --cov-report term-missing
-    # Conseguimos fazer com que o pytest nos devolva em qual linha está faltando um teste, que nesse caso, não faz muito sentido pois é a função --str--
-
-#     ---------- coverage: platform win32, python 3.10.8-final-0 -----------
-# Name                    Stmts   Miss  Cover   Missing
-# -----------------------------------------------------
-# codigo\Funcionario.py      35      0   100%
-# -----------------------------------------------------
-# TOTAL                      35      0   100%
-
-#Usaando o comando: pytest --cov=codigo tests/ --cov-report html, fazemos com que um arquivo HTML seja gerado, facilitando a visualização do nosso código
-
